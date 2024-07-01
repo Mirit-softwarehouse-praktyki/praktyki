@@ -11,7 +11,8 @@ title: "Ubuntu - Instalacja"
 # Instalacja mariadb
 - `sudo apt update`
 - `sudo apt install mariadb-server`
-```NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
+```
+NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
       SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
 
 In order to log into MariaDB to secure it, we'll need the current
