@@ -13,13 +13,13 @@ title: "Ubuntu - Instalacja"
 - `sudo apt update`
 - `sudo apt install mariadb-server`
 - odpowiedzi do pytań:
-	- `Switch to unix_socket authentication [Y/n]` **n**
-	- `Change the root password? [Y/n]` **y**
+	- *Switch to unix_socket authentication* [Y/n]` **n**
+	- *Change the root password? [Y/n]* **y**
 	- jako hasło wpiszcie i potwierdźcie np. **123**
-	- `Remove anonymous users? [Y/n]` **y**
-	- `Disallow root login remotely? [Y/n]` **y**
-	- `Remove test database and access to it? [Y/n]` **y**
-	- `Reload privilege tables now? [Y/n]` **y**
+	- *Remove anonymous users? [Y/n]* **y**
+	- *Disallow root login remotely? [Y/n]* **y**
+	- *Remove test database and access to it? [Y/n]* **y**
+	- *Reload privilege tables now? [Y/n]* **y**
 - `sudo mysql_secure_installation`
 
 # Instalacja phpmyadmin
@@ -51,7 +51,7 @@ title: "Ubuntu - Instalacja"
 - `sudo apt install npm`
 - `sudo apt-get update`
 - `sudo apt-get install curl`
-- alternatywa nvm: https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
+- alternatywa nvm: [https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
 
 # Docker + trzeba dodać do grupy docker
 
@@ -60,5 +60,9 @@ title: "Ubuntu - Instalacja"
 - `sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/`
 - `local/bin/docker-compose`
 - `sudo chmod +x /usr/local/bin/docker-compose`
+- Dodanie usera do grupy docker
+	- `sudo groupadd docker`
+	- `sudo usermod -aG docker $USER`
+	- uruchomić komputer ponownie
 
 
