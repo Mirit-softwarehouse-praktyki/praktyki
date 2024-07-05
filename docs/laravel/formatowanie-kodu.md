@@ -11,14 +11,14 @@ title: "Laravel - Formatowanie kodu"
 ## Formater VSCode do plików blade
 - np. [Laravel Blade - amirmarmul](https://marketplace.visualstudio.com/items?itemName=amirmarmul.laravel-blade-vscode)
 - konfiguracja jako domyślny formater w VSCode:
-    - będąc w pliku *.blade.php klikamy `Ctrl + Shift + P`
-    - wpisujemy `Format Document With`
-    - wybieramy `Configure Default Formatter`
-    - wybieramy `Laravel Blade`
-- alternatywa do pliku `settings.json` w VSCode wklejamy:
+    - będąc w pliku *.blade.php klikamy *Ctrl + Shift + P*
+    - wpisujemy *Format Document With*
+    - wybieramy *Configure Default Formatter*
+    - wybieramy *Laravel Blade*
+- alternatywa do pliku *settings.json* w VSCode wklejamy:
   ```
   "[blade]": {
     "editor.defaultFormatter": "amirmarmul.laravel-blade-vscode",
   }
   ```
-- formatowanie pliku: `Ctrl + Shift + I`
+- formatowanie pliku: *Ctrl + Shift + I*
