@@ -53,6 +53,17 @@ title: "Ubuntu - Instalacja"
 - `sudo apt-get install curl`
 - alternatywa nvm: [https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
 
+# Uprawnienia plików dla projektów Laravel
+- [Set Up File Permissions for Laravel](https://stackoverflow.com/questions/30639174/how-to-set-up-file-permissions-for-laravel), interesuje nas sekcja *Your user as owner*
+- komendy puszczamy w glównym katalogu projektu laravel
+	```
+	sudo chown -R $USER:www-data .
+	sudo find . -type f -exec chmod 664 {} \;   
+	sudo find . -type d -exec chmod 775 {} \;
+	sudo chgrp -R www-data storage bootstrap/cache
+	sudo chmod -R ug+rwx storage bootstrap/cache
+	```
+
 # Docker + trzeba dodać do grupy docker
 
 - `curl -fsSL https://get.docker.com/ | sh`
