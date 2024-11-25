@@ -4,6 +4,7 @@
 - [Pytania Rekrutacyjne](./laravel/pytania-rekrutacyjne.md)
 - [Formatowanie kodu](./laravel/formatowanie-kodu.md)
 - [Konfiguracja domeny Apache](./laravel/konfiguracja-domeny-apache.md)
+- [Nazewnictwo](./laravel/nazewnictwo.md)
 
 # [Vue](./vue/index.md)
 - [Junior](./vue/index.md#Junior)
